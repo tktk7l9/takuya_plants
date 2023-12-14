@@ -8,11 +8,11 @@ import styles from './layout.module.css';
 
 export const metadata = {
   metadataBase: new URL(process.env.BASE_URL || 'http://localhost:3000'),
-  title: 'Simple Blog',
-  description: 'A simple blog presented by microCMS',
+  title: 'Takuya Plants',
+  description: '植物の記録',
   openGraph: {
-    title: 'Simple Blog',
-    description: 'A simple blog presented by microCMS',
+    title: 'Takuya Plants',
+    description: '植物の記録',
     images: '/ogp.png',
   },
   alternates: {
@@ -29,7 +29,7 @@ export default async function RootLayout({ children }: Props) {
     limit: LIMIT,
   });
   return (
-    <html lang="en">
+    <html lang="ja">
       <body>
         <Header />
         <Nav tags={tags.contents} />
